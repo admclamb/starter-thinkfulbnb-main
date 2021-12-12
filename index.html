@@ -36,7 +36,10 @@
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
         <form action="">
-          <!--Missing a form inpuT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="Search destination" />
+          </div>
           <div class="form-group">
             <label for="arrive">Arrive</label>
             <input type="date" id="arrive" placeholder="" />
@@ -50,8 +53,14 @@
             <input
               type="text"
               id="type-location"
-              placeholder="Search destination"
+              list="type"
+              placeholder="apartment"
             />
+            <datalist id="type">
+              <option value="apartment">apartment</option>
+              <option value="house">house</option>
+              <option value="duplex">duplex</option>
+            </datalist>
           </div>
           <div class="form-group">
             <button type="submit">Search</button>
@@ -63,7 +72,7 @@
       <section id="about" class="alternate-background">
         <h2>About</h2>
         <div class="about-container">
-          <div class="container">
+          <div class="about-container--sub">
             <img
               src="images/vacation-rental-pool.png"
               alt="Thinkfulbnb - Vacation rental pool"
@@ -74,7 +83,7 @@
               alt="Thinkfulbnb - Vacation rental inside stone"
             />
           </div>
-          <div class="container">
+          <div class="about-container--sub">
             <p>
               Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
               fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
@@ -89,9 +98,10 @@
       <!-- Ideas -->
       <section id="ideas">
         <h2>Ideas</h2>
-        <h3>Forest retreats</h3>
+
         <div class="container">
           <div class="container--sub">
+            <h3>Forest retreats</h3>
             <img
               src="images/forest-retreat.png"
               alt="Thinkfulbnb - Forest retreat"
@@ -106,6 +116,8 @@
           <div class="container--sub">
             <h3>Rustic cabins</h3>
             <img src="images/cabin.png" alt="Thinkfulbnb - Cabin" />
+          </div>
+          <div class="container--sub">
             <h3>Pet-friendly</h3>
             <img
               src="images/pet-friendly.png"
@@ -117,7 +129,7 @@
 
       <!-- Host -->
       <section id="host" class="alternate-background">
-        <div class="container">
+        <div class="host-container">
           <h2>Want to Become a Thinkfulbnb Host?</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -139,7 +151,7 @@
             </li>
           </ul>
         </div>
-        <div class="container">
+        <div class="host-container">
           <img
             src="images/become-a-host.png"
             alt="Thinkfulbnb - Become a host"

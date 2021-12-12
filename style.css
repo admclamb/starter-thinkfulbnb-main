@@ -157,7 +157,7 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 987px) {
   /* Navigation */
   header {
     flex-direction: row;
@@ -182,8 +182,60 @@ footer p {
   }
 
   /* About */
+
+  #about img {
+    /* calculate the margin between images to get image width */
+    width: calc(50% - 1rem);
+  }
+
+  /* add margin to all but last child */
+  #about img:not(:last-child) {
+    margin-right: 1rem;
+  }
   .about-container {
     display: flex;
+  }
+
+  .about-container--sub {
+    display: flex;
     flex-direction: row;
+    width: 50%;
+    align-items: center;
+  }
+
+  .about-container--sub img {
+    width: 50px;
+  }
+  /* Ideas */
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .container--sub img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .container-sub {
+    width: 50%;
+  }
+
+  .container--sub:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  /* Host */
+
+  #host {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    align-items: center;
+  }
+
+  .host-container {
+    width: 50%;
   }
 }
