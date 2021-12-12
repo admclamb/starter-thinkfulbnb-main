@@ -157,6 +157,19 @@ footer p {
 
 /* -------  Media Query ------- */
 
+@media all and (max-width: 350px) {
+  .logo {
+    font-size: 2.7rem;
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
 @media all and (min-width: 987px) {
   /* Navigation */
   header {
